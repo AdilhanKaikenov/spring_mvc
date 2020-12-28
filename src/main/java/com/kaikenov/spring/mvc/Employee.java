@@ -1,6 +1,8 @@
 package com.kaikenov.spring.mvc;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Employee {
@@ -12,6 +14,8 @@ public class Employee {
     private Map<String, String> departments;
     public String carBrand;
     private Map<String, String> carBrands;
+    private String[] languages;
+    private Map<String, String> languageList;
 
     public Employee() {
         this.departments = new HashMap<>();
@@ -23,6 +27,11 @@ public class Employee {
         this.carBrands.put("BMW", "BMW");
         this.carBrands.put("Audi", "Audi");
         this.carBrands.put("Mercedes-Benz", "Mercedes-Benz");
+
+        this.languageList = new HashMap<>();
+        this.languageList.put("English", "EN");
+        this.languageList.put("Deutch", "DE");
+        this.languageList.put("French", "FR");
     }
 
     public Employee(String name, String surname, String salary, String department) {
@@ -86,6 +95,22 @@ public class Employee {
 
     public void setCarBrands(Map<String, String> carBrands) {
         this.carBrands = carBrands;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
+    }
+
+    public Map<String, String> getLanguageList() {
+        return languageList;
+    }
+
+    public void setLanguageList(Map<String, String> languageList) {
+        this.languageList = languageList;
     }
 
     @Override
