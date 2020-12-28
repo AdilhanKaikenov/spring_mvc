@@ -9,7 +9,11 @@
 <br>
 <br>
 
-Your name: ${nameAttribute}
+Your name: ${employee.name}
+<br>
+Your name: ${employee.surname}
+<br>
+Your name: ${employee.salary}
 
 </body>
 </html>
