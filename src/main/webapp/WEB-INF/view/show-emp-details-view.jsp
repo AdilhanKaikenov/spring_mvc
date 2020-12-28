@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Show Employee Details View</title>
 </head>
 <body>
 
@@ -9,7 +9,7 @@
 <br>
 <br>
 
-Your name: ${param.employeeName}
+Your name: ${nameAttribute}
 
 </body>
 </html>
